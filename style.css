@@ -68,6 +68,10 @@ nav{
     margin: 5px;
 }
 
+.conteudo {
+    padding-left: 20px;
+}
+
 /* Body - Conceito*/
 body{
     margin: 0;
@@ -77,17 +81,18 @@ body{
 
 .heading{
     display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #000;
-
+    color: #fffdcb;
 }
 
 .heading:first-child{
     background: url(./imagens/imagem1_2blur.jpg);
     background-size: cover;
-
 }
 
 .heading h1 {
@@ -96,16 +101,28 @@ body{
     font-size: 120px;
     color: var(--branco);
     z-index: 10;
+    padding-bottom: 60px ;
+    line-height: 1;
 }
+
 .heading:last-child{
-    background: url(./imagens/imagem2_2.jpg);
-    background-size: cover;
+    background-color: #40370c;
+    min-height: 50vh;
 }
+
+.heading .prox{
+    color: white;
+}
+
+.subtitle{
+    font-size: 15px;
+}
+
+
 
 section{
     height: auto;
     display: flex;
-    
 }
 
 section .imgBx{
@@ -113,7 +130,7 @@ section .imgBx{
     top: 0;
     height: 100vh;
     min-width: 50%;
-    background: #000;
+    background: #fffdcb;
 }
 
 
@@ -123,7 +140,7 @@ section .imgBx img{
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 h2 {
@@ -146,6 +163,11 @@ section .storyBx p{
     padding: 0;
     font-size: 18px;
     text-align: justify;
+}
+
+section .comparison {
+    background-color: #d5cb81;
+    width: 50%;
 }
 
 /* MOBILE*/
