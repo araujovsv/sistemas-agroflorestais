@@ -302,13 +302,16 @@ section .comparison {
 }
 .img-section {
     background-color: #76794b;
-    min-height: 90vh;
+    height: auto;
+    width: auto;
 }
 .item {
     padding-bottom: 20px;
 }
 
-
+.container-manejo {
+    min-height: 270px;
+}
 
 
 
@@ -323,6 +326,10 @@ section .comparison {
     max-width: 100%;
     vertical-align: middle;
   }
+
+  .verticalImg {
+      height: 600px;
+  }
   
   
   .cards {
@@ -331,6 +338,7 @@ section .comparison {
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-bottom: 2.5rem;
   }
   
   .cards_item {
@@ -349,7 +357,8 @@ section .comparison {
       width: 33.3333%;
     }
   }
-  
+
+
   .card_vert {
     background-color: white;
     border-radius: 0.25rem;
@@ -363,7 +372,12 @@ section .comparison {
     padding: 1rem;
     background: linear-gradient(to bottom left, #40370c 10%, #76794b 100%);
   }
-  
+
+  @media (min-width: 1068px) {
+    .card_content2 {
+      height: 6rem;
+    }
+  }
   .card_title {
     color: #ffffff;
     font-size: 1.1rem;
@@ -388,6 +402,14 @@ section .comparison {
   }
 
 
+  .card_content2 {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #40370c 10%, #76794b 100%);
+    height: 8rem;
+  }
+
+
+
   /* Referências */
 
 .referencias {
@@ -400,7 +422,7 @@ section .comparison {
 }
 
 .ref-items {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     text-align: justify;
