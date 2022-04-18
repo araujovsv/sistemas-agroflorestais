@@ -427,3 +427,31 @@ section .comparison {
     padding-right: 1.5rem;
     text-align: justify;
 }
+
+.autoria {
+    padding-top: 6rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.letra {
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.ref-letra {
+    padding-right: 1rem;
+    font-size: 20px;
+}
+
+.space {
+    padding-bottom: 1.5rem;
+}
+
+.referencia-agro {
+    padding-bottom: 2.5rem;
+}
+.referencia-agroa {
+    color: #40370c;
+    font-size: 17px;
+}
